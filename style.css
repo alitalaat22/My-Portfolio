@@ -206,6 +206,57 @@ section{
     font-size: 1.5em;
 }
 
+.About-Me {
+    background-color: #f0f0f0;
+    padding: 50px 130px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info, .objective, .experience {
+    margin-bottom: 40px;
+}
+
+.contact-info h2, .objective h2, .experience h2 {
+    color: #c12358f6;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-info p, .objective p, .experience ul {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-info a, .objective a {
+    color: #c12358f6;
+    text-decoration: none;
+}
+
+.contact-info a:hover, .objective a:hover {
+    text-decoration: underline;
+}
+
+.experience h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #c12358f6;
+}
+
+.experience ul {
+    list-style: none;
+}
+
+.experience ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
 .footer{
 	background-color: black;
 	color: #fefefef6;
