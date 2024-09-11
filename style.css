@@ -206,7 +206,7 @@ section{
     font-size: 1.5em;
 }
 
-.About-Me {
+/* .About-Me {
     background-color: #f0f0f0;
     padding: 50px 130px;
 }
@@ -255,7 +255,41 @@ section{
 .experience ul li {
     font-size: 1.1em;
     margin-bottom: 10px;
+} */
+
+.About-Me {
+    background-color: #f0f0f0; /* تغيير لون الخلفية */
+    padding: 50px 20px; /* إضافة هوامش داخلية (padding) من جميع الجهات */
+    text-align: center; /* توسيط النصوص */
 }
+
+.About-Me .container {
+    max-width: 1200px; /* تعيين الحد الأقصى لعرض الحاوية */
+    margin: 0 auto; /* توسيط الحاوية في الصفحة */
+}
+
+.About-Me .objective, 
+.About-Me .experience {
+    background-color: #ffffff; /* لون خلفية القسمين الفرعيين */
+    border-radius: 10px; /* إضافة حواف دائرية */
+    padding: 20px; /* إضافة هوامش داخلية */
+    margin: 20px 0; /* إضافة هوامش خارجية */
+}
+
+.About-Me .objective h2, 
+.About-Me .experience h2 {
+    color: #c12358f6; /* تغيير لون العنوان */
+    font-size: 2em; /* تغيير حجم الخط */
+    margin-bottom: 15px; /* إضافة هوامش أسفل العنوان */
+}
+
+.About-Me .objective p, 
+.About-Me .experience p {
+    color: #333333; /* تغيير لون النص */
+    font-size: 1em; /* تغيير حجم الخط */
+    line-height: 1.6; /* تحسين تباعد الأسطر */
+}
+
 
 .footer{
 	background-color: black;
