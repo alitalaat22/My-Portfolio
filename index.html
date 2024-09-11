@@ -3,172 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Ali Elshaer</title>
+    <title>Project Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header with navigation -->
     <header>
-        <a href="#" class="logo">Ali Elshaer</a>
-        <nav class="navigation">
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="#about-me">About Me</a>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section class="main">
-        <div>
-            <h2>Hello, I am Ali Elshaer<br><span>Software Engineering</span></h2>
-            <h3>Backend Developer</h3>
-            <a href="#projects" class="main-btn">View My Work</a>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/alitalaat/?originalSubdomain=eg"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://x.com/AliElShAaer1"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://github.com/alitalaat22"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/alitalaat.elshaer"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/ali_raw18/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+    <!-- Intro section -->
+    <section id="intro">
+        <div class="cover-image">
+            <img src="cover-image.jpg" alt="Project Cover Image">
+        </div>
+        <h1>Project Name</h1>
+        <p>A brief description of your project.</p>
+        <a href="https://your-deployed-app-url.com" class="button">Visit App</a>
+    </section>
+
+    <!-- Features section -->
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature">
+            <img src="feature1-image.jpg" alt="Feature 1">
+            <h3>Feature 1</h3>
+            <p>Description of Feature 1.</p>
+        </div>
+        <div class="feature">
+            <img src="feature2-image.jpg" alt="Feature 2">
+            <h3>Feature 2</h3>
+            <p>Description of Feature 2.</p>
+        </div>
+        <div class="feature">
+            <img src="feature3-image.jpg" alt="Feature 3">
+            <h3>Feature 3</h3>
+            <p>Description of Feature 3.</p>
         </div>
     </section>
 
-    <section class="cards" id="services">
-        <h2 class="title">Services</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
-                <div class="info">
-                    <h3>Web Development</h3>
-                    <p>Designing and developing professional websites that meet clients' needs, with a focus on performance and user experience.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-desktop"></i>
-                </div>
-                <div class="info">
-                    <h3>Web Application Development</h3>
-                    <p>Building dynamic web applications using modern technologies like JavaScript and Python, integrating both backend and frontend.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-paintbrush"></i>
-                </div>
-                <div class="info">
-                    <h3>UI/UX Design</h3>
-                    <p>Designing attractive and user-friendly interfaces, enhancing user experience through interface design analysis and evaluation.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-search"></i>
-                </div>
-                <div class="info">
-                    <h3>Search Engine Optimization (SEO)</h3>
-                    <p>Improving site rankings in search engine results, implementing strategies to enhance content and user experience.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-tools"></i>
-                </div>
-                <div class="info">
-                    <h3>Site Maintenance and Updates</h3>
-                    <p>Providing maintenance and update services to ensure sites operate smoothly, with regular content updates and performance improvements.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-comments"></i>
-                </div>
-                <div class="info">
-                    <h3>Technical Consulting</h3>
-                    <p>Providing consultations on best practices in web development and guiding clients on improving their digital strategies.</p>
-                </div>
-            </div>
-        </div>
+    <!-- About section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Description of what inspired the project. Personal story goes here.</p>
+        <p>Links to each team member’s LinkedIn, GitHub, and Twitter profile:</p>
+        <ul>
+            <li><a href="https://linkedin.com/in/team-member1">Team Member 1 LinkedIn</a></li>
+            <li><a href="https://github.com/team-member1">Team Member 1 GitHub</a></li>
+            <li><a href="https://twitter.com/team-member1">Team Member 1 Twitter</a></li>
+            <!-- Repeat for other team members -->
+        </ul>
+        <a href="https://github.com/your-repository" class="button">View GitHub Repository</a>
     </section>
 
-    <section class="projects" id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <!-- Repeat this block for each project -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="photos/A7MD4798.jpg" alt="Project Image"/>
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Back-End Development</p>
-                    <strong class="project-title">
-                        <span>Project Title</span>
-                        <a href="https://fb.watch/ufyb-ZhMbC/" class="more-details">More Details</a>
-                    </strong>
-                </div>
-            </div>
-            <!-- End of project block -->
-        </div>
+    <!-- Optional video section -->
+    <section id="video">
+        <h2>Project Video</h2>
+        <video controls>
+            <source src="project-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </section>
 
-    <section class="cards contact" id="contact">
-        <h2 class="title">Contact Me</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <h3><a href="tel:+201092530806" class="more-details"><i class="fa-brands fa-whatsapp"></i></a></h3>
-                </div>
-                <div class="info">
-                    <h3><a href="tel:+201092530806" class="more-details">Whatsapp</a></h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <h3><a href="mailto:alitalaat.ah@gmail.com" class="more-details"><i class="fas fa-envelope"></i></a></h3>
-                </div>
-                <div class="info">
-                    <h3><a href="mailto:alitalaat.ah@gmail.com" class="more-details">Email</a></h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <h3><a href="https://x.com/AliElShAaer1" class="more-details"><i class="fa-brands fa-x-twitter"></i></a></h3>
-                </div>
-                <div class="info">
-                    <h3><a href="https://x.com/AliElShAaer1" class="more-details">Twitter</a></h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-me" id="about-me">
-        <div class="container main-content">
-            <section class="objective">
-                <h2>Objective</h2>
-                <p>As a Software Engineer, I am passionate about leveraging technology to build innovative solutions. My goal is to contribute my expertise in software development and problem-solving to dynamic projects, while continually expanding my skill set and staying updated with the latest industry trends.</p>
-            </section>
-
-            <section class="experience">
-                <h2>Technical Skills and Experience</h2>
-                <h3>Kick Starting</h3>
-                <ul>
-                    <li>Tools: Navigation Shell 🐚, WSL, Ubuntu, Linux Command Line</li>
-                    <li>Version Control: Git</li>
-                    <li>Text Editors: Visual Studio Code, Emacs, Vim</li>
-                    <li>GitHub</li>
-                </ul>
-
-                <h3>Getting Started</h3>
-                <ul>
-                    <li>Flow Charts</li>
-                    <li>Low-Level Programming: Compiler, Libraries, Data Structures</li>
-                    <li>Basic Programming Concepts: Variables, Strings, Arrays, Control Structures (if...else, for...while loops), Functions, Debugging, File I/O</li>
-                    <li>Memory Allocation: Structures, Typedef, Pointers, Recursion</li>
-                    <li>Data Structures: Singly Linked List, Doubly Linked List, Stacks, Queues, Hash Tables, Binary Trees</li>
-                    <li>Algorithms: Sorting Algorithms, Big O Notation, Search Algorithms</li>
-                </ul>
-
-                <h3>Higher Level Programming</h3>
-                <ul>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
