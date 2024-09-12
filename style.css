@@ -1,391 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
-	font-family: "Poppins", sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-}
-header{
-	background-color: #ffffff;
-	width: 100%;
-	position: fixed;
-	z-index: 999;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 200px;
-}
-.logo{
-	text-decoration: none;
-	color: #c12358f6;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 1.8em;
-
-}
-.navigation a{
-	text-decoration: none;
-	color: #c12358f6;
-	font-weight: 500;
-	font-size: 1.2em;
-	padding-left: 30px;
-}
-.navigation a:hover{
-	color: #d48121f6;
-}
-section{
-	padding: 100px 130px;
-}
-.main{
-	width: 100%;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	background: url(photos/cover.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-
-}
-.main h2{
-	color: #fffffff6;
-	font-size: 1.4em;
-	font-weight: 500;
-}
-.main h2 span{
-	display: inline-block;
-	margin-top: 10px;
-	color: #c12358f6;
-	font-size: 2em;
-	font-weight: 600;
-}
-.main h3{
-	color: #ffffff;
-	font-size: 2em;
-	font-weight: 700;
-	letter-spacing: 1px;
-	margin-top: 10px;
-	margin-bottom: 30px;
-}
-.main-btn{
-	color: #ffffff;
-	background-color: #c12358f6;
-	text-decoration: none;
-	font-size: 1.1em;
-	font-size: 600;
-	display: inline-block;
-	padding: 0.9375em  2.1875em;
-	letter-spacing: 1px;
-	border-radius: 15px;
-	margin-bottom: 40px;
-	transition: 0.6s ease;
-}
-.main-btn:hover{
-	background-color: #d0205af6;
-	transform: scale(1.3);
-}
-.social-icons a{
-	color: #fffffff6;
-	font-size: 1.7em;
-	padding-right: 30px;
-}
-.tittle{
-	display: flex;
-	justify-content: center;
-	color: #c12358f6;
-	font-size: 2.2em;
-	font-weight: 800;
-	margin-bottom: 30px;
-
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.content{
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-bottom: 30px;
-}
-.card{
-	background-color: #ffffff;
-	width: 21.25em;
-	box-shadow: 0 5px 30px rgba(1, 1, 1, 20%);
-	border-radius: 10px;
-	padding: 25px;
-	margin: 15px;
-	transition: 0.7s ease;
-}
-.card:hover{
-	transform: scale(1.2);
-
-}
-.icon{
-	color: #c12358f6;
-	font-size: 8em;
-	text-align: center;
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-.info{
-	text-align: center;
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
 }
 
-.info h3{
-	color: #c12358f6;
-	font-size: 1.2em;
-	font-weight: 700;
-	margin: 10px;
-}
-.Projects{
-	background-color: #23b9c1f6;
+header .logo {
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #fff;
 }
 
-.Projects .content{
-	margin-top: 30px;
-}
-.Project-card{
-	background-color: #ffffff;
-	border: 2px solid #ffffff;
-	min-height: 14em;
-	width: 22em;
-	overflow: hidden;
-	border-radius: 10px;
-	margin: 20px;
-	transition: 0.6s ease;
+header .navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
-
-.Project-card:hover{
-	transform: scale(1.1);
+header .navigation a:hover {
+    text-decoration: underline;
 }
 
-.Project-card:hover .Projects-image{
-	opacity: 0.9;
+/* Main Section Styles */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #333;
+    color: #fff;
+    text-align: center;
 }
 
-.Projects-image img{
-	width: 100%;
+.main h2 {
+    font-size: 2.5em;
 }
 
-.Projects-info{
-	padding: 1em;
-}
-
-.Projects-category{
-	font-size: 0.8em;
-	color: #23b9c1f6;
-}
-
-.Projects-tittle {
-	display: flex;
-	justify-content: space-between;
-	text-transform: uppercase;
-	font-weight: 800px;
-	margin-top: 10px;
-}
-.more-details {
-	text-decoration: none;
-	color: #c12358f6;
-}
-
-.more-details:hover{
-	color: #23b9c1f6;
-
-}
-
-.contact .icon{
-    font-size: 4.5em;
-}
-
-.contact .info h3 {
-    color: #23b9c1f6;
-}
-
-.contact .info {
+.main h3 {
     font-size: 1.5em;
+    margin: 10px 0;
 }
 
-/* .About-Me {
-    background-color: #f0f0f0;
-    padding: 50px 130px;
+.main-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-.container {
+.main-btn:hover {
+    background: #ddd;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+/* Services Section Styles */
+.cards {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.cards .title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cards .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards .card {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 1 1 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cards .card .icon i {
+    font-size: 2em;
+    color: #333;
+}
+
+.cards .card h3 {
+    margin: 10px 0;
+}
+
+/* Projects Section Styles */
+.Projects {
+    background: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.Projects .title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.Projects .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Projects .Project-card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 1 1 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Projects .Projects-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.Projects .Projects-info {
+    padding: 10px 0;
+}
+
+.Projects .Projects-info .more-details {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.Projects .Projects-info .more-details:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section Styles */
+.contact .card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .card .icon a {
+    color: #007BFF;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.contact .card .info h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact .card .info h3 a:hover {
+    text-decoration: underline;
+}
+
+/* About Me Section Styles */
+.About-Me {
+    background: #fff;
+    padding: 40px 20px;
+}
+
+.About-Me .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.contact-info, .objective, .experience {
-    margin-bottom: 40px;
-}
-
-.contact-info h2, .objective h2, .experience h2 {
-    color: #c12358f6;
+.About-Me h2 {
     font-size: 2em;
-    font-weight: 700;
     margin-bottom: 20px;
 }
 
-.contact-info p, .objective p, .experience ul {
-    font-size: 1.1em;
-    color: #333;
-}
-
-.contact-info a, .objective a {
-    color: #c12358f6;
-    text-decoration: none;
-}
-
-.contact-info a:hover, .objective a:hover {
-    text-decoration: underline;
-}
-
-.experience h3 {
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #c12358f6;
-}
-
-.experience ul {
+.About-Me ul {
     list-style: none;
+    padding: 0;
 }
 
-.experience ul li {
-    font-size: 1.1em;
+.About-Me ul li {
     margin-bottom: 10px;
-} */
-
-.About-Me {
-    background-color: #f0f0f0; /* تغيير لون الخلفية */
-    padding: 50px 20px; /* إضافة هوامش داخلية (padding) من جميع الجهات */
-    text-align: center; /* توسيط النصوص */
 }
 
-.About-Me .container {
-    max-width: 1200px; /* تعيين الحد الأقصى لعرض الحاوية */
-    margin: 0 auto; /* توسيط الحاوية في الصفحة */
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.About-Me .objective, 
-.About-Me .experience {
-    background-color: #ffffff; /* لون خلفية القسمين الفرعيين */
-    border-radius: 10px; /* إضافة حواف دائرية */
-    padding: 20px; /* إضافة هوامش داخلية */
-    margin: 20px 0; /* إضافة هوامش خارجية */
-}
-
-.About-Me .objective h2, 
-.About-Me .experience h2 {
-    color: #c12358f6; /* تغيير لون العنوان */
-    font-size: 2em; /* تغيير حجم الخط */
-    margin-bottom: 15px; /* إضافة هوامش أسفل العنوان */
-}
-
-.About-Me .objective p, 
-.About-Me .experience p {
-    color: #333333; /* تغيير لون النص */
-    font-size: 1em; /* تغيير حجم الخط */
-    line-height: 1.6; /* تحسيgfن تباعد الأسطر */
-}
-
-
-.footer{
-	background-color: black;
-	color: #fefefef6;
-	padding: 1em;
-	display: flex;
-	justify-content: space-between;
-}
-
-.footer-tittle{
-	font-size: 1.2em;
-	font-weight: 600;
-
-}
-.footer-tittle span{
-	font-size: 1.3em;
-	font-weight: 650;
-	color: #c12358f6;
-}
- .footer .social-icons a{
-	font-size: 2em;
-	padding: 0 12 0 0;
- }
-
- @media (max-width:1023px){
-    header{
-        padding: 12px 20px;
-    }
-
-    .navigation a{
-        padding-left: 10px;
-    }
-
-    .title{
-        font-size: 1.8em;
-    }
-
-    section{
-        padding: 80px 20px;
-    }
-
-    .main-content h2{
-        font-size: 1em;
-    }
-
-    .main-content h3{
-        font-size: 1.6em;
-    }
-
-    .content{
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width:641px){
-    body{
-        font-size: 12px;
-    }
-
-    .main-content h2{
-        font-size: 0.8em;
-    }
-
-    .main-content h3{
-        font-size: 1.4em;
-    }
-}
-
-@media (max-width:300px){
-    body{
-        font-size: 10px;
-     
-    }
-}
-@media (max-width: 768px) {
-    header {
-        padding: 10px 15px;
-    }
-    .navigation a {
-        font-size: 1em;
-    }
-    .main h2 {
-        font-size: 1.2em;
-    }
-    .main h3 {
-        font-size: 1.5em;
-    }
-    .tittle {
-        font-size: 1.5em;
-    }
-    .card {
-        width: 90%;
-        margin: 10px;
-    }
-    .Project-card {
-        width: 90%;
-    }
+footer .footer-content p {
+    margin: 5px 0;
 }
