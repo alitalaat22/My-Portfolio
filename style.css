@@ -1,236 +1,398 @@
-/* Reset some default styles */
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Apply the default font to all elements */
 * {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-/* Header Styles */
+/* Header styles */
 header {
+    background-color: #ffffff; /* Header background color */
+    width: 100%;
+    position: fixed;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
+    padding: 10px 200px;
 }
 
-header .logo {
+/* Logo styles */
+.logo {
+    text-decoration: none;
+    color: #c12358f6;
+    text-transform: uppercase;
+    font-weight: 700;
     font-size: 1.8em;
+}
+
+/* Navigation link styles */
+.navigation a {
     text-decoration: none;
-    color: #fff;
+    color: #c12358f6;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-left: 30px;
 }
 
-header .navigation a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
+/* Hover effect for navigation links */
+.navigation a:hover {
+    color: #d48121f6;
 }
 
-header .navigation a:hover {
-    text-decoration: underline;
+/* Section styles */
+section {
+    padding: 100px 130px;
 }
 
-/* Main Section Styles */
+/* Main section styles */
 .main {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background: #333;
-    color: #fff;
-    text-align: center;
+    background: url(photos/cover.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
+/* Main section heading styles */
 .main h2 {
-    font-size: 2.5em;
+    color: #fffffff6;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #c12358f6;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 .main h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
+/* Main button styles */
 .main-btn {
+    color: #ffffff;
+    background-color: #c12358f6;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
     display: inline-block;
-    padding: 10px 20px;
-    background: #f4f4f4;
-    color: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.6s ease;
 }
 
+/* Hover effect for main buttons */
 .main-btn:hover {
-    background: #ddd;
+    background-color: #d0205af6;
+    transform: scale(1.3);
 }
 
-/* Social Icons */
+/* Social icons styles */
 .social-icons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 1.5em;
-    text-decoration: none;
+    color: #fffffff6;
+    font-size: 1.7em;
+    padding-right: 30px;
 }
 
-.social-icons a:hover {
-    color: #ddd;
-}
-
-/* Services Section Styles */
-.cards {
-    padding: 40px 20px;
-    background: #fff;
-}
-
-.cards .title {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.cards .content {
+/* Title styles */
+.tittle {
     display: flex;
+    justify-content: center;
+    color: #c12358f6;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/* Content section styles */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin-bottom: 30px;
 }
 
-.cards .card {
-    background: #f4f4f4;
-    padding: 20px;
+/* Card styles */
+.card {
+    background-color: #ffffff;
+    width: 21.25em;
+    box-shadow: 0 5px 30px rgba(1, 1, 1, 20%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: scale(1.2);
+}
+
+/* Icon styles */
+.icon {
+    color: #c12358f6;
+    font-size: 8em;
+    text-align: center;
+}
+
+/* Information section styles */
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #c12358f6;
+    font-size: 1.2em;
+    font-weight: 700;
     margin: 10px;
-    border-radius: 5px;
-    flex: 1 1 30%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-.cards .card .icon i {
-    font-size: 2em;
-    color: #333;
-}
-
-.cards .card h3 {
-    margin: 10px 0;
-}
-
-/* Projects Section Styles */
+/* Projects section styles */
 .Projects {
-    background: #f4f4f4;
-    padding: 40px 20px;
-}
-
-.Projects .title {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
+    background-color: #23b9c1f6;
 }
 
 .Projects .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin-top: 30px;
 }
 
-.Projects .Project-card {
-    background: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    flex: 1 1 45%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Project card styles */
+.Project-card {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    min-height: 14em;
+    width: 22em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.6s ease;
 }
 
-.Projects .Projects-image img {
+/* Hover effect for project cards */
+.Project-card:hover {
+    transform: scale(1.1);
+}
+
+.Project-card:hover .Projects-image {
+    opacity: 0.9;
+}
+
+/* Project image styles */
+.Projects-image img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
 }
 
-.Projects .Projects-info {
-    padding: 10px 0;
+/* Project info styles */
+.Projects-info {
+    padding: 1em;
 }
 
-.Projects .Projects-info .more-details {
-    color: #007BFF;
-    text-decoration: none;
+/* Project category styles */
+.Projects-category {
+    font-size: 0.8em;
+    color: #23b9c1f6;
 }
 
-.Projects .Projects-info .more-details:hover {
-    text-decoration: underline;
-}
-
-/* Contact Section Styles */
-.contact .card {
+/* Project title styles */
+.Projects-tittle {
     display: flex;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
 }
 
-.contact .card .icon a {
-    color: #007BFF;
-    font-size: 1.5em;
-    margin-right: 15px;
-}
-
-.contact .card .info h3 a {
-    color: #333;
+/* More details link styles */
+.more-details {
     text-decoration: none;
+    color: #c12358f6;
 }
 
-.contact .card .info h3 a:hover {
-    text-decoration: underline;
+/* Hover effect for more details links */
+.more-details:hover {
+    color: #23b9c1f6;
 }
 
-/* About Me Section Styles */
+/* Contact icon styles */
+.contact .icon {
+    font-size: 4.5em;
+}
+
+/* Contact info styles */
+.contact .info h3 {
+    color: #23b9c1f6;
+}
+
+.contact .info {
+    font-size: 1.5em;
+}
+
+/* About-Me section styles */
 .About-Me {
-    background: #fff;
-    padding: 40px 20px;
+    background-color: #f0f0f0; /* Background color change */
+    padding: 50px 20px; /* Add padding on all sides */
+    text-align: center; /* Center align text */
 }
 
 .About-Me .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container */
 }
 
-.About-Me h2 {
+.About-Me .objective, 
+.About-Me .experience {
+    background-color: #ffffff; /* Background color for the sections */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 20px; /* Add padding */
+    margin: 20px 0; /* Add margin */
+}
+
+.About-Me .objective h2, 
+.About-Me .experience h2 {
+    color: #c12358f6; /* Heading color */
+    font-size: 2em; /* Font size for headings */
+    margin-bottom: 15px; /* Margin below the heading */
+}
+
+.About-Me .objective p, 
+.About-Me .experience p {
+    color: #333333; /* Text color */
+    font-size: 1em; /* Font size */
+    line-height: 1.6; /* Line height for readability */
+}
+
+/* Footer styles */
+.footer {
+    background-color: black;
+    color: #fefefef6;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer title styles */
+.footer-tittle {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.footer-tittle span {
+    font-size: 1.3em;
+    font-weight: 650;
+    color: #c12358f6;
+}
+
+/* Social icons in footer */
+.footer .social-icons a {
     font-size: 2em;
-    margin-bottom: 20px;
+    padding: 0 12px 0 0;
 }
 
-.About-Me ul {
-    list-style: none;
-    padding: 0;
+/* Media queries for different screen sizes */
+
+/* For screens smaller than 1023px */
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.About-Me ul li {
-    margin-bottom: 10px;
+/* For screens smaller than 641px */
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
 }
 
-/* Footer Styles */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* For screens smaller than 300px */
+@media (max-width: 300px) {
+    body {
+        font-size: 10px;
+    }
 }
 
-footer .footer-content p {
-    margin: 5px 0;
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    .navigation a {
+        font-size: 1em;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .main h3 {
+        font-size: 1.5em;
+    }
+
+    .tittle {
+        font-size: 1.5em;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .Project-card {
+        width: 90%;
+    }
 }
